@@ -5,13 +5,13 @@ importScripts(
 
 // Replace these with your own Firebase config keys...
 const firebaseConfig = {
-  apiKey: "AIzaSyBDrRXNKQRMP6HCrnbg5I5Xp798O9iwRmY",
-  authDomain: "react-spa-799eb.firebaseapp.com",
-  projectId: "react-spa-799eb",
-  storageBucket: "react-spa-799eb.appspot.com",
-  messagingSenderId: "488067871392",
-  appId: "1:488067871392:web:ecd4b4285cf91cb2b08fc5",
-  measurementId: "G-48ZKNCG7B3",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBAE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 firebase.initializeApp(firebaseConfig);
